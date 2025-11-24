@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: imranmehar468/kubernetes-newrelic
+  tag: "1.0"
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 8080
+
+env:
+  newRelicAppName: "SpringBoot-K8s-NewRelic"
+  newRelicLicenseKeySecret: "newrelic-secret"

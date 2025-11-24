@@ -1,0 +1,4 @@
+apiVersion: v2
+name: springboot-k8s-newrelic
+version: 0.1.0
+description: Spring Boot app with New Relic monitoring
