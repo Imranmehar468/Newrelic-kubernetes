@@ -6,8 +6,9 @@ image:
   pullPolicy: IfNotPresent
 
 service:
-  type: NodePort
-  port: 8080
+  type: LoadBalancer
+  port: 80
+  targetPort: 8080
 
 env:
   newRelicAppName: "SpringBoot-K8s-NewRelic"
