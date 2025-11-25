@@ -75,7 +75,7 @@ jobs:
           ECR_URI=$ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPO_NAME
 
           helm upgrade --install springboot-k8s-newrelic ./charts \
-            --namespace default \
+            --namespace newrelic \
             --set image.repository=$ECR_URI \
             --set image.tag=${GITHUB_SHA} \
             --wait
